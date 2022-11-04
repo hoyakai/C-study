@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+	FILE *in=fopen("NumberFile.txt","w");
+	int a;
+	scanf("%d",&a);
+	fprintf(in,"%d",a);
+	printf("%d",a);
+	fclose(in);
+}
